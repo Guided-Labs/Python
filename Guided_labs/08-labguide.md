@@ -236,6 +236,11 @@ You can sort arrays using the `np.sort()` function.
   - Create a Python file named `sorted_array.py` inside your `numpy` folder and add the following code.
 
 ```python
+import numpy as np
+# Create a 1D array
+array_1d = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+# Create a 2D array (matrix)
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
 # Sorting a 1D array
 sorted_array = np.sort(array_1d)
 print(f"Sorted 1D Array: {sorted_array}")

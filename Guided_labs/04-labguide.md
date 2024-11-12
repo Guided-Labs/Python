@@ -58,7 +58,7 @@ Learn to create Python functions to read from and write to files. This knowledge
 
 ### **Write Functions for File I/O Operations**
 
-#### **Creating a New File**
+### **Creating a New File**
 
 To create a new file, use the `'w'` mode with the `open()` function.
 
@@ -98,7 +98,7 @@ python creatingfile_io.py
 This function creates a new file and writes a line of text to it.
 
 
-#### **Writing to a File**
+### **Writing to a File**
 
 - **Create a new file** 
 
@@ -129,7 +129,7 @@ python file_operations/writingfile_io.py
 This function writes the specified data to the given file.
 
 
-#### **Reading from a File**
+### **Reading from a File**
 
 - **Create a new file** 
 
@@ -160,7 +160,7 @@ python file_operations/readingfile_io.py
 This function reads the entire content of the specified file.*
 
 
-#### **Appending to a File**
+### **Appending to a File**
 
 - **Create a new file** 
 
@@ -190,39 +190,9 @@ python file_operations/appending_io.py
 
 This function appends data to the end of the specified file.
 
+  
 
-#### **Reading a File Line by Line**
-
-- **Create a new file** 
-
-  - Create a Python file named `read_line.py` inside your `file_operations` folder and add the following code.
-
-```python
-def read_file_line_by_line(filename):
-    """Read a file line by line."""
-    with open(filename, 'r') as file:
-        for line in file:
-            print(line.strip())
-
-read_file_line_by_line('example.txt')
-```
-
-- **Run the Python file**  
-
-   Use the command below in your terminal to run the Python file:
-
-```bash
-python file_operations/read_line.py
-```
-
-**Output:**
-
-![alt text](images/file5.png)
-
-This function reads and prints each line of the specified file.
-
-
-#### **Reading Specific Lines from a File**
+### **Reading Specific Lines from a File**
 
 - **Create a new file** 
 
@@ -254,7 +224,7 @@ python file_operations/specific_line.py
 This function reads and returns specific lines from the file based on the given line numbers.
 
 
-#### **Checking if a File Exists**
+### **Checking if a File Exists**
 
 - **Create a new file** 
 
@@ -288,7 +258,7 @@ python file_operations/checking_file.py
 This function checks if the specified file exists.
 
 
-#### **Copying a File**
+### **Copying a File**
 
 - **Create a new file** 
 
@@ -320,7 +290,7 @@ python file_operations/copying_file.py
 This function copies a file from one location to another.
 
 
-#### **Renaming a File**
+### **Renaming a File**
 
 - **Create a new file** 
 
@@ -352,13 +322,14 @@ python file_operations/renaming_file.py
 This function renames the specified file.
 
 
-#### **Deleting a File**
+### **Deleting a File**
 
 - **Create a new file** 
 
   - Create a Python file named `deleting_file.py` inside your `file_operations` folder and add the following code.
 
 ```python
+import os
 def delete_file(filename):
     """Delete a file if it exists."""
     if os.path.isfile(filename):
@@ -385,7 +356,7 @@ python file_operations/deleting_file.py
 This function deletes the specified file if it exists.
 
 
-#### **Reading CSV Files**
+### **Reading CSV Files**
 
 - **Create a new file** 
 
@@ -419,7 +390,7 @@ python file_operations/reading_csv.py
 This function reads data from a CSV file.
 
 
-#### **Writing CSV Files**
+### **Writing CSV Files**
 
 - **Create a new file** 
 

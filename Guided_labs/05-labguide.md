@@ -53,7 +53,7 @@ Learn how to implement exception handling in Python to manage errors and excepti
 ### **Write Code with Exception Handling**
 
 
-#### **Try Block**
+### **Try Block**
 
 The `try` block is used to wrap code that might cause an error during execution. If an error occurs, Python will stop executing the code in this block and jump to the corresponding `except` block.
 
@@ -88,7 +88,7 @@ python exception_handling/try.py
 
 This function divides two numbers and handles division by zero errors gracefully.
 
-#### **Except Block**
+### **Except Block**
 
 The `except` block allows you to define what should happen when an error occurs in the `try` block. You can specify different types of exceptions to handle specific errors.
 
@@ -123,7 +123,7 @@ python exception_handling/except.py
 
 This function prompts the user for input and handles cases where the input is not a valid integer.
 
-#### **Using Else Block**
+### **Using Else Block**
 
 The `else` block is executed if the code in the `try` block runs without any errors. It is optional and can be used to define actions that should only happen if no exceptions were raised.
 
@@ -160,7 +160,7 @@ python exception_handling/using_else.py
 
 This function attempts to read a file and uses the `else` block to return content only if no errors occur.
 
-#### **Finally Block**
+### **Finally Block**
 
 The `finally` block allows you to execute code regardless of whether an exception occurred or not.
 
@@ -199,7 +199,7 @@ python exception_handling/finally.py
  This function demonstrates exception handling by trying to divide by zero, catching the resulting `ZeroDivisionError`, and executing code in the `finally` block that runs regardless of an exception.
 
 
-#### **Raising Exceptions**
+### **Raising Exceptions**
 
 You can raise exceptions using the `raise` statement.
 
@@ -236,7 +236,7 @@ python exception_handling/raising_exception.py
 
 ---
 
-## References
+## **References**
 
 - [Python Exceptions Documentation](https://docs.python.org/3/tutorial/errors.html)
 - [Python Exception Handling](https://realpython.com/python-exceptions/)

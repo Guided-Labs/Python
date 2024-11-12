@@ -140,6 +140,8 @@ def capitalize_word(word):
 Next, write the unit test for this function in `test_main.py`:
 
 ```python
+import unittest
+from main import capitalize_word
 class TestStringFunctions(unittest.TestCase):
     """Unit test class for testing string functions."""
 
@@ -176,6 +178,8 @@ def get_first_element(lst):
 Then write a unit test for this function:
 
 ```python
+import unittest
+from main import get_first_element
 class TestListFunctions(unittest.TestCase):
     """Unit test class for testing list functions."""
 
