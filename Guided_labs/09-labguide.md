@@ -55,7 +55,7 @@ Write and execute unit tests in Python using the `unittest` framework to verify 
 
 ##### 1. Create the Python Main File
 
-  Create a new Python file named `main.py` in your project directory. This file will contain the function(s) that you want to test.
+  Create a new Python file named `main.py` inside your `test` folder. This file will contain the function(s) that you want to test.
 
 ```python
 def add(a, b):
@@ -73,7 +73,7 @@ This simple file contains functions that can be tested using the `unittest` fram
 
 ##### 2. Write Unit Tests Using unittest Framework
 
-Now, create a file named `test_main.py` to write unit tests for the functions in `main.py`. Follow the steps below:
+Now, create a file named `test_main.py` inside your `test` folder,to write unit tests for the functions in `main.py`. Follow the steps below:
 
 - Import the `unittest` module.
 - Create a test class that inherits from `unittest.TestCase`.
@@ -115,6 +115,7 @@ Once your tests are written, you can run them using the Python command. Here’s
 - Run the tests using the following command:
 
 ```bash
+cd test
 python -m unittest test_main.py
 ```
 
@@ -140,8 +141,6 @@ def capitalize_word(word):
 Next, write the unit test for this function in `test_main.py`:
 
 ```python
-import unittest
-from main import capitalize_word
 class TestStringFunctions(unittest.TestCase):
     """Unit test class for testing string functions."""
 
@@ -149,11 +148,15 @@ class TestStringFunctions(unittest.TestCase):
         """Test case for capitalize_word function."""
         self.assertEqual(capitalize_word('hello'), 'Hello')  # Test if 'hello' becomes 'Hello'
         self.assertEqual(capitalize_word('python'), 'Python')  # Test if 'python' becomes 'Python'
+
+if __name__ == '__main__':
+    unittest.main()
 ```
 
 **Run the tests:**
 
 ```bash
+cd test
 python -m unittest test_main.py
 ```
 
@@ -178,8 +181,6 @@ def get_first_element(lst):
 Then write a unit test for this function:
 
 ```python
-import unittest
-from main import get_first_element
 class TestListFunctions(unittest.TestCase):
     """Unit test class for testing list functions."""
 
@@ -187,11 +188,15 @@ class TestListFunctions(unittest.TestCase):
         """Test case for get_first_element function."""
         self.assertEqual(get_first_element([1, 2, 3]), 1)  # Test if the first element is 1
         self.assertEqual(get_first_element([]), None)  # Test if an empty list returns None
+
+if __name__ == '__main__':
+    unittest.main()
 ```
 
 **Run the tests:**
 
 ```bash
+cd test
 python -m unittest test_main.py
 ```
 
